@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+html{
+    overflow: scroll;
+}
 body {
     font-family: 'PT Sans', sans-serif;
     background-color: #252529;
@@ -17,9 +20,9 @@ body {
     background: url('../img/showcase.jpg') no-repeat
     center/cover;
     width: 100%;
-    height: 100vh;
+    height:100vh;
     position: relative;
-    overflow-y:hidden;
+    margin-bottom:10px;
 }
 #showcase .container{
     margin-top: 25vh;
@@ -42,6 +45,9 @@ body {
 }
 .lead{
     font-size:1.2rem;
+}
+.section{
+    padding: 2rem 0;
 }
 nav {
     height: 40px;
@@ -74,6 +80,21 @@ nav a#openup {
 }
 
 @media screen and (max-width: 580px) {
+    .hide-on-small{
+        display: none;
+    }
+    #showcase{
+        height: 50vh;
+    }
+    #showcase .container{
+        margin-left: 15vh;
+    }
+    #showcase h1{
+        font-size:3rem;
+    }
+    #showcase h2{
+    font-size:1.5rem;
+    }
     h1 {
         font-size: 2.8em;
     }
