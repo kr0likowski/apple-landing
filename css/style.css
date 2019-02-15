@@ -23,7 +23,7 @@ a{
 img{
   width:100%
 }
-/* Text colors */
+/* Colors */
 .text-primary{
     color:var(--primary-color);
 }
@@ -32,6 +32,10 @@ img{
 }
 .text-light{
     color:var(--white-color);
+}
+.light-bg{
+    background:var(--white-color);
+    color:#333;
 }
 /* Buttons */
 .btn{
@@ -85,6 +89,15 @@ img{
     font-size:2rem;
 
 }
+/* Footer */
+footer .footer-cols{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer-cols ul{
+    list-style: none;
+}
 /* Music */
 
 /* Utility */
@@ -106,11 +119,15 @@ img{
 .mt{
     margin-top:1rem;
 }
+.text-center{
+    text-align: center;
+}
 nav {
     height: 40px;
     width: 100%;
     background-color: #333;
     color: #eee;
+    position:fixed;
 }
 nav ul {
     padding: 0;
