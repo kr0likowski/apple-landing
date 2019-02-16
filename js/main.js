@@ -19,3 +19,19 @@ $(function() {
     });
     $('.open-menu').height($(window).height());
 });
+//Scrolling
+$("#amusic").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#music").offset().top
+    }, 500);
+});
+$("#avideo").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#video").offset().top
+    }, 500);
+});
+$("#ashowcase").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#showcase").offset().top
+    }, 500);
+});
